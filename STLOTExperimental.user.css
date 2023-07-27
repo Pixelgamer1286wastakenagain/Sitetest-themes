@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         SiteTest Legacy Old Theme (Experimental)
-@version      1.0.2
+@version      1.0.2a
 @namespace    userstyles.world/user/tersiswilvin
 @description  A heavily modified Roblox Old Light Theme (2019) by GalactiCosmo aimed to be more accurate with customizable options.
 @author       tersiswilvin
@@ -10134,7 +10134,7 @@
             margin-right: 40px;
             padding: 0;
         }
-        .icon-logo::before
+        #RollerContainer .icon-logo::before
   {
       & when (@LogoStyle = 201511) {
     content: "Powering Imagination" !important;
@@ -10155,7 +10155,7 @@
       }
   }
 
-  .icon-logo::after
+  #RollerContainer .icon-logo::after
   {
       & when (@LogoStyle = 201511) {
     content: " ™ ";
@@ -10251,7 +10251,7 @@
             padding: 0;
         }
     }
-        .icon-logo::before
+        #RollerContainer .icon-logo::before
   {
       & when (@LogoStyle = 201511) {
     content: "Powering Imagination" !important;
@@ -10272,7 +10272,7 @@
       }
   }
 
-  .icon-logo::after
+  #RollerContainer .icon-logo::after
   {
       & when (@LogoStyle = 201511) {
     content: " ™ ";
