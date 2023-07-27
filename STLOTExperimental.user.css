@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         SiteTest Legacy Old Theme (Experimental)
-@version      1.0.2.2
+@version      1.0.3
 @namespace    userstyles.world/user/tersiswilvin
 @description  A heavily modified Roblox Old Light Theme (2019) by GalactiCosmo aimed to be more accurate with customizable options.
 @author       tersiswilvin
@@ -10153,6 +10153,23 @@
     line-height: 42px;
     z-index: -1 !important;
       }
+	   & when (@LogoStyle = 201412) or (@LogoStyle = 201408) {
+    content: "You Make the Game" !important;
+    color: white !important;
+    font-size: 35px !important;
+    background-color: #000000b3 !important;
+    padding: 10px 25px !important;
+    text-align: center;
+    margin-top: -20px !important;
+    display: inline-block;
+    position: relative;
+    top: 126px;
+    left: 20px;
+    height: 65.488px !important;
+    font-weight: 300;
+    line-height: 42px;
+    z-index: -1 !important;
+      }
   }
 
   #RollerContainer .icon-logo::after
@@ -10265,6 +10282,23 @@
     position: relative;
     top: 136px;
     left: 5px;
+    height: 65.488px !important;
+    font-weight: 300;
+    line-height: 42px;
+    z-index: -1 !important;
+      }
+	   & when (@LogoStyle = 201412) or (@LogoStyle = 201408) {
+    content: "You Make the Game" !important;
+    color: white !important;
+    font-size: 35px !important;
+    background-color: #000000b3 !important;
+    padding: 10px 25px !important;
+    text-align: center;
+    margin-top: -20px !important;
+    display: inline-block;
+    position: relative;
+    top: 126px;
+    left: 20px;
     height: 65.488px !important;
     font-weight: 300;
     line-height: 42px;
