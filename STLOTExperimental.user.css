@@ -6340,6 +6340,7 @@
 			}
 			& when (@LegacyFooterText = 2019E) {
 				content: '©2019 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.'
+			}
 			& when (@LegacyFooterText = 2020) {
 				content: '©2020 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.'
 			}
