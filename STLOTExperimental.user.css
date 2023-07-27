@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         SiteTest Legacy Old Theme (Experimental)
-@version      1.0.1
+@version      1.0.2
 @namespace    userstyles.world/user/tersiswilvin
 @description  A heavily modified Roblox Old Light Theme (2019) by GalactiCosmo aimed to be more accurate with customizable options.
 @author       tersiswilvin
@@ -19,7 +19,7 @@
 @var          select   greetingTxt                 "Greeting Text Style"                ["None*", "Hello", "HelloExclamation", "Exclamation"]
 @var          select   CardStyle                   "Item Card Style"                    ["Pre-2018", "2019E", "2019M*", "2019L"]
 @var          checkbox LegacyBTRGameHeaders        "Legacy Game Headers (BTRoblox)"     0
-@var          select   LegacyFooterText            "Legacy Footer Text"                 ["None*","BrandSync","2014E","2015E","2016E","2016L","2017E","2017M","2018E","2018L","2019E"]
+@var          select   LegacyFooterText            "Legacy Footer Text"                 ["None*","BrandSync","2014E","2015E","2016E","2016L","2017E","2017M","2018E","2018L","2019E","2020"]
 @var          checkbox LegacyNextStyleGuideButtons "Legacy Next Styleguide"             0
 @var          checkbox AvatarGogoSpinner           "My Avatar Gogo Spinner"             0
 @var          checkbox SponsorSizing               "Original Sponsor Size (Deprecated)" 1
@@ -6340,6 +6340,8 @@
 			}
 			& when (@LegacyFooterText = 2019E) {
 				content: '©2019 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.'
+			& when (@LegacyFooterText = 2020) {
+				content: '©2020 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.'
 			}
 			& when (@SourceSansPro = 0) {
 				font-size: 10px;
@@ -10131,6 +10133,37 @@
             margin-right: 40px;
             padding: 0;
         }
+        .icon-logo::before
+  {
+      & when (@LogoStyle = 201511) {
+    content: "Powering Imagination" !important;
+    color: white !important;
+    font-size: 35px !important;
+    background-color: #000000b3 !important;
+    padding: 10px 25px !important;
+    text-align: center;
+    margin-top: -20px !important;
+    display: inline-block;
+    position: relative;
+    top: 136px;
+    left: 5px;
+    height: 65.488px !important;
+    font-weight: 300;
+    line-height: 42px;
+    z-index: -1 !important;
+      }
+  }
+
+  .icon-logo::after
+  {
+      & when (@LogoStyle = 201511) {
+    content: " ™ ";
+    font-size: 15px !Important;
+    font-weight: 300 !important;
+    position: relative;
+    top: 76px;
+    left: 430px;
+  }
         .signup-container .birthday-container .birthday-select-group:before {
             content: 'Birthday';
             color: #191919;
@@ -10182,6 +10215,7 @@
             }
         }
     }
+        }
     & when (@SignUpStyle = 2018) {
         .signup-or-log-in .signup-input-area div:nth-child(n+3) .font-caption-header {
             display: none;
@@ -10216,6 +10250,37 @@
             padding: 0;
         }
     }
+        .icon-logo::before
+  {
+      & when (@LogoStyle = 201511) {
+    content: "Powering Imagination" !important;
+    color: white !important;
+    font-size: 35px !important;
+    background-color: #000000b3 !important;
+    padding: 10px 25px !important;
+    text-align: center;
+    margin-top: -20px !important;
+    display: inline-block;
+    position: relative;
+    top: 136px;
+    left: 5px;
+    height: 65.488px !important;
+    font-weight: 300;
+    line-height: 42px;
+    z-index: -1 !important;
+      }
+  }
+
+  .icon-logo::after
+  {
+      & when (@LogoStyle = 201511) {
+    content: " ™ ";
+    font-size: 15px !Important;
+    font-weight: 300 !important;
+    position: relative;
+    top: 76px;
+    left: 430px;
+  }
     
     .light-theme .signup-container .has-success .form-control, .light-theme .signup-container .has-success .rbx-select-group .rbx-select, .dark-theme .signup-container .has-success .form-control, .dark-theme .signup-container .has-success .rbx-select-group .rbx-select {
         border-color: #3c763d;
@@ -10415,6 +10480,7 @@
             background-size: auto 94px;
         }
     }
+        }
     }
     & when (@SignUpStyle = 2019L) {
         .light-theme .rbx-login-form {
