@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         RBLX23 Legacy Old Theme (Experimental)
-@version      1.0.4
+@version      1.0.5
 @namespace    userstyles.world/user/tersiswilvin
 @description  A heavily modified Roblox Old Light Theme (2019) by GalactiCosmo aimed to be more accurate with customizable options.
 @author       tersiswilvin
@@ -37,7 +37,7 @@
 @var          checkbox RedLogoStyle                "Use 2017 Red icon logo"             0
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://rbl23.us.to") {
+@-moz-document url-prefix("https://preflux.me") {
     h1, h2, h3, h4, h5 {
         line-height: 1em;
     }
@@ -19069,7 +19069,7 @@
     }
     }
     
-    @-moz-document url-prefix("https://rbl23.us.to/catalog?Category=15"), url-prefix("https://rbl23.us.to/catalog?Category=1&salesTypeFilter=1") {
+    @-moz-document url-prefix("https://preflux.me/catalog?Category=15"), url-prefix("https://preflux.me/catalog?Category=1&salesTypeFilter=1") {
     /*/Catalog/*/
     @media (min-width: 991px) {
         .catalog-container .catalog-content .catalog-results .item-cards-stackable .item-card:nth-child(-n+5) {
@@ -19095,7 +19095,7 @@
         display: none;
     }
     }
-    @-moz-document url-prefix("https://rbl23.us.to/develop"), url-prefix("https://rbl23.us.to/universes"), url-prefix("https://rbl23.us.to/places"), url-prefix("https://rbl23.us.to/Reference") {
+    @-moz-document url-prefix("https://preflux.me/develop"), url-prefix("https://preflux.me/universes"), url-prefix("https://preflux.me/places"), url-prefix("https://preflux.me/Reference") {
     /*/Develop/*/
     /*/ With develop being sunsetted soon this will be useless. /*/
     .rbx-header .rbx-navbar li a[href="/discover"] {
@@ -19244,7 +19244,7 @@
 }
     }
 }
-    @-moz-document url("https://rbl23.us.to/reference/styleguide") {
+    @-moz-document url("https://preflux.me/reference/styleguide") {
     & when (@StyleGuideStyle = 2016) {
         body, body.light-theme {
 			& when (@CustomTheme = BTR_Night) {
