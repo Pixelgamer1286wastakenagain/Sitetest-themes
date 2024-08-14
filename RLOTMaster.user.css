@@ -37,7 +37,7 @@
 @var          checkbox RedLogoStyle                "Use 2017 Red icon logo"             0
 ==/UserStyle== */
 
-@-moz-document url-prefix("https://www.preflux.me"), url-prefix("https://web.preflux.me") {
+@-moz-document url-prefix("https://www.preflux.me"), url-prefix("https://preflux.me"), url-prefix("https://web.preflux.me") {
     h1, h2, h3, h4, h5 {
         line-height: 1em;
     }
